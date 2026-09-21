@@ -1,0 +1,9 @@
+{
+  "name": "横浜ライブ遠征 2026",
+  "short_name": "横浜遠征",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#0f172a",
+  "lang": "ja"
+}
