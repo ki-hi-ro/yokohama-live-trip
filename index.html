@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="2026年9月21日〜22日 横浜ライブ遠征のスマホ用旅程ページ">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <title>横浜ライブ遠征 2026.09.21–22</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07111f;--surface:#0f1b2d;--text:#f8fafc;--muted:#9fb0c6;--line:rgba(255,255,255,.09);--accent:#7dd3fc;--accent2:#a7f3d0;--warn:#fcd34d;--shadow:0 18px 50px rgba(0,0,0,.28);--radius:22px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;background:radial-gradient(circle at 80% -20%,rgba(56,189,248,.16),transparent 34%),linear-gradient(180deg,#07111f 0%,#091525 45%,#07111f 100%);color:var(--text)}
+    a{color:inherit}
+    .hero{min-height:300px;display:flex;align-items:flex-end;background:linear-gradient(135deg,#172554 0%,#0f172a 45%,#07111f 100%);position:relative;overflow:hidden}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:999px;filter:blur(3px)}
+    .hero:before{width:260px;height:260px;background:rgba(56,189,248,.12);right:-70px;top:-70px}
+    .hero:after{width:180px;height:180px;background:rgba(167,243,208,.08);left:-50px;bottom:-70px}
+    .hero-inner{padding:30px 20px 34px;width:min(760px,100%);margin:0 auto;position:relative;z-index:1}
+    .eyebrow{font-size:13px;letter-spacing:.12em;color:#dbeafe;font-weight:800}
+    h1{font-size:clamp(31px,9vw,54px);line-height:1.03;margin:10px 0 10px}
+    .hero p{margin:0;color:#d6e2f2;font-size:15px;line-height:1.7}
+    .container{width:min(760px,100%);margin:0 auto;padding:18px 14px 100px}
+    .status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:-34px;position:relative;z-index:2}
+    .status{background:rgba(15,27,45,.96);border:1px solid var(--line);box-shadow:var(--shadow);padding:14px 10px;border-radius:18px;text-align:center}
+    .status b{display:block;font-size:13px}.status span{display:block;font-size:12px;color:var(--muted);margin-top:5px}
+    .section-title{font-size:18px;margin:28px 4px 13px}
+    .card{background:linear-gradient(180deg,rgba(20,36,58,.94),rgba(12,25,42,.96));border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);margin-bottom:13px}
+    .card-head{display:flex;gap:13px;align-items:flex-start}.time{flex:0 0 74px;font-size:24px;font-weight:900;letter-spacing:-.04em}
+    .time small{display:block;font-size:11px;color:var(--muted);font-weight:700;letter-spacing:0;margin-top:4px}
+    .event{flex:1}.event h2{font-size:18px;line-height:1.35;margin:1px 0 5px}.event p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+    .badge{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;font-weight:800;border-radius:999px;padding:6px 9px;background:rgba(125,211,252,.12);color:#c9efff;border:1px solid rgba(125,211,252,.2)}
+    .badge.ok{background:rgba(167,243,208,.11);color:#cbffe9;border-color:rgba(167,243,208,.18)}.badge.warn{background:rgba(252,211,77,.11);color:#ffeaa1;border-color:rgba(252,211,77,.2)}
+    .actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:15px}.btn{display:flex;align-items:center;justify-content:center;text-decoration:none;min-height:46px;border-radius:14px;padding:11px 12px;background:#eaf6ff;color:#092038;font-size:13px;font-weight:900}
+    .btn.secondary{background:rgba(255,255,255,.07);color:#eff6ff;border:1px solid var(--line)}
+    .warning{border-left:4px solid var(--warn);background:rgba(252,211,77,.08);padding:15px 15px 15px 16px;border-radius:15px;margin:14px 0;color:#fff3bf;font-size:13px;line-height:1.65}
+    .route-mini{display:flex;align-items:center;gap:8px;color:#dbeafe;margin-top:10px;font-size:13px}.route-mini .line{height:1px;background:rgba(255,255,255,.16);flex:1}
+    .checklist{display:grid;gap:9px}label.check{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.035);border:1px solid var(--line);padding:13px;border-radius:14px;font-size:14px}
+    input[type="checkbox"]{width:21px;height:21px;accent-color:#7dd3fc}.countdown{text-align:center;padding:22px 18px}.countdown strong{display:block;font-size:31px;letter-spacing:-.04em;margin:6px 0}.countdown span{font-size:12px;color:var(--muted)}
+    .footer-note{color:#71839a;text-align:center;font-size:11px;line-height:1.6;margin-top:24px}
+    .sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;padding:10px max(12px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));background:linear-gradient(180deg,rgba(7,17,31,0),rgba(7,17,31,.95) 32%)}
+    .sticky-inner{width:min(760px,100%);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:9px}
+    @media (max-width:420px){.hero{min-height:270px}.status{padding:12px 5px}.status b{font-size:12px}.status span{font-size:10px}.card{padding:16px}.time{flex-basis:66px;font-size:21px}}
+  </style>
+</head>
+<body>
+<header class="hero"><div class="hero-inner"><div class="eyebrow">LIVE TRIP / 2026.09.21–22</div><h1>横浜ライブ遠征</h1><p>行きのバス、ライブ、帰りのバスをスマホで素早く確認。</p></div></header>
+<main class="container">
+  <section class="status-grid"><div class="status"><b>🚌 行き</b><span>予約済み</span></div><div class="status"><b>🎫 ライブ</b><span>確保済み</span></div><div class="status"><b>🚌 帰り</b><span>予約確認</span></div></section>
+  <h2 class="section-title">次の予定</h2>
+  <section class="card countdown"><span id="next-label">予定を確認中</span><strong id="countdown">--:--</strong><span id="next-detail">日本時間で表示</span></section>
+  <h2 class="section-title">9/21 → 9/22 タイムライン</h2>
+  <section class="card"><div class="card-head"><div class="time">23:50<small>9/21 集合目安</small></div><div class="event"><h2>浜松駅南口で集合</h2><p>ステーションホテル前。バスは「9/21 24:00」表記ですが、実際の時計では9/22 00:00発です。</p><div class="badge ok">✓ 行きバス予約済み</div></div></div><div class="route-mini"><span>浜松</span><div class="line"></div><span>バスタ新宿</span></div><div class="actions"><a class="btn" href="https://www.yoyakutol.com/ridedetail-546.html" target="_blank" rel="noopener">乗り場案内</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=%E6%B5%9C%E6%9D%BE%E9%A7%85%E5%8D%97%E5%8F%A3" target="_blank" rel="noopener">地図で開く</a></div></section>
+  <section class="card"><div class="card-head"><div class="time">00:00<small>9/22</small></div><div class="event"><h2>KR254D 浜松 → 新宿</h2><p>3列独立シート / 5,500円。4:50ごろバスタ新宿3F到着予定。</p><div class="badge">3列独立</div></div></div></section>
+  <section class="card"><div class="card-head"><div class="time">04:50<small>到着予定</small></div><div class="event"><h2>バスタ新宿 → 横浜へ移動</h2><p>朝は時間に余裕あり。横浜駅方面へ移動し、開場前に休憩・朝食。</p></div></div><div class="actions"><a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E3%83%90%E3%82%B9%E3%82%BF%E6%96%B0%E5%AE%BF&destination=BuzzFront+Yokohama&travelmode=transit" target="_blank" rel="noopener">経路を開く</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=BuzzFront+Yokohama" target="_blank" rel="noopener">会場を見る</a></div></section>
+  <section class="card"><div class="card-head"><div class="time">12:00<small>OPEN</small></div><div class="event"><h2>嘔吐 1st ONE-MAN LIVE</h2><p>BuzzFront Yokohama。13:00開演、14:00ごろ終了予定。</p><div class="badge ok">✓ チケット確保済み</div></div></div><div class="actions"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=BuzzFront+Yokohama" target="_blank" rel="noopener">会場マップ</a><a class="btn secondary" href="https://buzzfront.net/" target="_blank" rel="noopener">会場サイト</a></div></section>
+  <div class="warning"><b>帰りは時間勝負。</b><br>14:00終了予定 → 15:15集合。終演後は寄り道せず横浜駅へ。東京八重洲の乗り場は「地下A」です。</div>
+  <section class="card"><div class="card-head"><div class="time">15:15<small>集合</small></div><div class="event"><h2>JAMJAM JX73 東京八重洲</h2><p>15:30発 → 21:00 名古屋南・ささしまライブ着。4列標準 / 4,000円。</p><div class="badge warn">帰り便：予約状況を確認</div></div></div><div class="actions"><a class="btn" href="https://jamjamliner.jp/meetmap/meetmap.html?MEETMAP=bt-tokyoyaesu-A" target="_blank" rel="noopener">乗り場案内</a><a class="btn secondary" href="https://www.google.com/maps/dir/?api=1&origin=BuzzFront+Yokohama&destination=%E3%83%90%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E6%9D%B1%E4%BA%AC%E5%85%AB%E9%87%8D%E6%B4%B2&travelmode=transit" target="_blank" rel="noopener">横浜→八重洲</a></div></section>
+  <h2 class="section-title">当日チェック</h2>
+  <section class="card checklist">
+    <label class="check"><input type="checkbox" data-key="ticket">ライブチケットを表示できる</label>
+    <label class="check"><input type="checkbox" data-key="bus">行きバス予約画面を保存</label>
+    <label class="check"><input type="checkbox" data-key="umbrella">折り畳み傘</label>
+    <label class="check"><input type="checkbox" data-key="battery">モバイルバッテリー</label>
+    <label class="check"><input type="checkbox" data-key="water">飲み物</label>
+    <label class="check"><input type="checkbox" data-key="return">帰り便の予約状況を確認</label>
+  </section>
+  <p class="footer-note">住所・電話番号・メールアドレス・予約IDなどの個人情報は掲載していません。運行時刻は当日の公式案内を優先してください。</p>
+</main>
+<div class="sticky"><div class="sticky-inner"><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=BuzzFront+Yokohama" target="_blank" rel="noopener">📍 会場</a><a class="btn" href="https://jamjamliner.jp/meetmap/meetmap.html?MEETMAP=bt-tokyoyaesu-A" target="_blank" rel="noopener">🚌 帰り乗り場</a></div></div>
+<script>
+document.querySelectorAll('input[type="checkbox"][data-key]').forEach(el=>{const k='trip-check-'+el.dataset.key;el.checked=localStorage.getItem(k)==='1';el.addEventListener('change',()=>localStorage.setItem(k,el.checked?'1':'0'))});
+const events=[
+{time:'2026-09-21T23:50:00+09:00',label:'浜松駅 集合',detail:'23:50までに浜松駅南口へ'},
+{time:'2026-09-22T00:00:00+09:00',label:'行きバス出発',detail:'KR254D / 浜松 → 新宿'},
+{time:'2026-09-22T04:50:00+09:00',label:'新宿到着予定',detail:'バスタ新宿3F'},
+{time:'2026-09-22T12:00:00+09:00',label:'ライブ開場',detail:'BuzzFront Yokohama'},
+{time:'2026-09-22T13:00:00+09:00',label:'ライブ開演',detail:'終了予定 14:00ごろ'},
+{time:'2026-09-22T15:15:00+09:00',label:'帰りバス集合',detail:'東京八重洲 地下A'},
+{time:'2026-09-22T15:30:00+09:00',label:'帰りバス出発',detail:'JX73 / 東京 → 名古屋'},
+{time:'2026-09-22T21:00:00+09:00',label:'名古屋到着予定',detail:'名古屋南・ささしまライブ'}];
+function tick(){const now=new Date();const next=events.find(e=>new Date(e.time)>now);const label=document.getElementById('next-label'),out=document.getElementById('countdown'),detail=document.getElementById('next-detail');if(!next){label.textContent='旅程完了';out.textContent='おつかれさまでした';detail.textContent='安全に帰宅してください';return}const diff=new Date(next.time)-now,d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000);label.textContent=next.label;out.textContent=(d?d+'日 ':'')+h+'時間 '+m+'分';detail.textContent=next.detail}tick();setInterval(tick,30000);
+if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{})}
+</script>
+</body>
+</html>
